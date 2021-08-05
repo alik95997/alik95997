@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
+  <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-image:url('back.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+      background-color: #ffc107;
+      color:black;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border:1px solid black;
+      outline: 1px solid black;
+      transition: 0.4s;
+      box-shadow: 0 4px 8px 0 black /* this adds the "card" effect */
+
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .accordion:hover {
+      background-color: #ccc;
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      display: none;
+      overflow: hidden;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Float four columns side by side */
+    .column {
+      margin-left: 80px;
+      width: 40%;
+      padding: 0 10px;
+    }
+
+    /* Remove extra left and right margins, due to padding in columns */
+    .row {
+      margin: 0 -5px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the counter cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      /* this adds the "card" effect */
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+
+    /* Responsive columns - one column layout (vertical) on small screens */
+    @media screen and (max-width: 600px) {
+      .column {
+        margin-left: 0px;
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-" style="background-color: #6f42c1;">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img style="width: 170px; margin-left: 40px;" src="logo-2.png"
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a style="font-size: large;  background-color:#6f42c1;" class="nav-link active text-warning " aria-current="page"
+                        href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-size: large; background-color:#6f42c1;" class="nav-link active text-warning " href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-size: large; background-color: #6f42c1;;" class="nav-link active text-warning " href="brands.html">Brands</a>
+                </li>
+                <li class="nav-item">
+                    <a style="font-size: large; background-color:#6f42c1;" class="nav-link active text-warning " href="console.html">Console</a>
+                <li class="nav-item">
+                    <a style="font-size: large; background-color: #6f42c1;;" href="contact.html" class="nav-link active text-warning ">Contact</a>
+                </li>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <div class="card bg-transparent  text-white">
+    <img style="background-size: cover; height: 400px;" src="contact-bg.jpg" class="card-img" alt="">
+    <div class="card-img-overlay">
+      <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 50px ;"
+        class="card-title text-center text-warning">TANGOLINE COMPARISION</h1>
+      <p class="card-text text-center"><a style="text-decoration: none; background-color: black; color: orange;"
+          href="index.html">HOME</a> /
+        <span> <a style="text-decoration: none; color: orange; background-color: black;" href="">COMPARISION</a>
+        </span>
+      </p>
+    </div>
+  </div>
+  
+  <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 50px ;"
+        class="card-title text-center text-warning">Compare Our Products</h1>
+        <p class="card-text text-center"><a style="text-decoration: none; background-color: black; color: orange;"
+          href="index.html">Click on product to see details</a>
+        <br> <br>
+        
+  <div class="row">
+    <div class="column">
+      <h4 style="text-align: center;   " class="card-title text-warning ">ITEM 1</h4>
+      <div class="card ">
+        <button class="accordion dropdown-toggle text-center">Casio Loopy</button>
+        <div class="panel">
+          <p><img src="casio-loopy-console.jpg" alt="">
+          <h3>Cassio Loopy</h3>
+          <p>The Casio Loopy was a fifth-generation home video console introduced by Casio in 1995. It was only
+            released in Japan. While the system claims to use 32-bit RISC processing, it appeared technically
+            unimpressive due to the nature of the software available.
+            <br>PKR : 46,400.
+          </p>
+          <a href="#" class="btn btn-warning">-Buy Now-</a>
+          </p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Nintendo 64</button>
+        <div class="panel">
+          <p><img src="nintendo64.jpg" alt="">
+            <h3>Nintendo 64</h3>
+            <p>The Nintendo 64 is a home video game console developed and marketed by Nintendo. Named for its 64-bit
+                central processing unit, it was released in June 1996 in Japan. It was the last major home console
+                to use the cartridge as its primary storage.
+                <br>
+                PKR : 31,999.
+            </p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Playstation 2</button>
+        <div class="panel">
+          <p><img src="playstation2.jpg" alt="">
+            <h3>Playstation 2</h3>
+            <p>PS2 sold over 155 million consoles worldwide and had almost 4,000 games released up to late 2013,
+                making it the highest selling and most played console of all time. As well as great games,PS2 boated
+                the birthplace of online gaming, high definition graphics.
+                <br>
+                PKR : 14,699.
+            </p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a></p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Powkiddy X18</button>
+        <div class="panel">
+          <p><img src="powkiddyx.jpg" alt="">
+            <h3>Powkiddy X18</h3>
+            <p>The POWKIDDY X18 is a cheap Android handheld games console that features a 5.5-inch touchscreen along
+                with numerous physical controls including two joysticks. The X18 has a 5,000 mAh battery, while its
+                design may remind you of some Japanese handheld games consoles.
+
+                PKR : 21,440.</p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Sega Saturn</button>
+        <div class="panel">
+          <p> <img src="segasaturn.jpg" alt="">
+            <h3>Sega Saturn</h3>
+            <p>The Sega Saturn is a 32-bit fifth-generation home video game console developed by Sega and released
+                on November 22, 1994 in Japan, May 11, 1995 in North America. The successor to the successful Sega
+                Genesis, the Saturn has a dual-CPU architecture and eight processors.
+
+                <br>
+                PKR : 12,799.
+            </p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Playstaion 4</button>
+        <div class="panel">
+          <p><img src="ps4.jpg" alt="">
+            <h3>Playstaion 4</h3>
+            <p>The PlayStation 4 is an 8th-generation home video game console developed by Sony Interactive
+                Entertainment. The console's controller was also redesigned and improved over the PlayStation 3,
+                with improved buttons and analog sticks, and an integrated touchpad among other changes. PKR :
+                47,999.
+
+            </p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a></p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Playstation</button>
+        <div class="panel">
+          <p><img src="ps1.jpg" alt="" width="40%">
+            <h3>Playstation</h3>
+            <p>The PlayStation is a home video game console developed and marketed by Sony Computer Entertainment.
+                It was first released on 3 December 1994 in Japan, 9 September 1995 in North America, 29 September
+                1995 in Europe, and 15 November 1995 in Australia, and was the first of the PlayStation line of
+                video game consoles. <br> PKR : 14,699/</p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+
+        <button class="accordion dropdown-toggle text-center">Playstation 3</button>
+        <div class="panel">
+          <p><img src="ps3.jpg" alt="" width="40%">
+            <h3>Playstation 3</h3>
+            <p>The PlayStation 3 is a home video game console developed by Sony Computer Entertainment.  and is part of the PlayStation brand of consoles.It was the first console to use Blu-ray Disc as its primary storage medium. Sony PS3 family is cheaper and offers up to 500GB storage. <br> PKR : 23,999.</p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="column ">
+      <h4 style="text-align: center;  " class="card-title text-warning ">ITEM 2</h4>
+      <div class="card">
+        <button class="accordion dropdown-toggle text-center">Casio Loopy</button>
+        <div class="panel">
+          <p><img src="casio-loopy-console.jpg" alt="">
+                <h3>Cassio Loopy</h3>
+                <p>The Casio Loopy was a fifth-generation home video console introduced by Casio in 1995. It was only
+                    released in Japan. While the system claims to use 32-bit RISC processing, it appeared technically
+                    unimpressive due to the nature of the software available.
+                    <br>PKR : 46,400.
+                </p>
+                <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Nintendo 64</button>
+        <div class="panel">
+          <p><img src="nintendo64.jpg" alt="">
+            <h3>Nintendo 64</h3>
+            <p>The Nintendo 64 is a home video game console developed and marketed by Nintendo. Named for its 64-bit
+                central processing unit, it was released in June 1996 in Japan. It was the last major home console
+                to use the cartridge as its primary storage.
+                <br>
+                PKR : 31,999.
+            </p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Playstation 2</button>
+        <div class="panel">
+          <p><img src="playstation2.jpg" alt="">
+            <h3>Playstation 2</h3>
+            <p>PS2 sold over 155 million consoles worldwide and had almost 4,000 games released up to late 2013,
+                making it the highest selling and most played console of all time. As well as great games,PS2 boated
+                the birthplace of online gaming, high definition graphics.
+                <br>
+                PKR : 14,699.
+            </p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a></p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Powkiddy X18</button>
+        <div class="panel">
+          <p><img src="powkiddyx.jpg" alt="">
+            <h3>Powkiddy X18</h3>
+            <p>The POWKIDDY X18 is a cheap Android handheld games console that features a 5.5-inch touchscreen along
+                with numerous physical controls including two joysticks. The X18 has a 5,000 mAh battery, while its
+                design may remind you of some Japanese handheld games consoles.
+
+                PKR : 21,440.</p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Sega Saturn</button>
+        <div class="panel">
+          <p> <img src="segasaturn.jpg" alt="">
+            <h3>Sega Saturn</h3>
+            <p>The Sega Saturn is a 32-bit fifth-generation home video game console developed by Sega and released
+                on November 22, 1994 in Japan, May 11, 1995 in North America. The successor to the successful Sega
+                Genesis, the Saturn has a dual-CPU architecture and eight processors.
+
+                <br>
+                PKR : 12,799.
+            </p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Playstaion 4</button>
+        <div class="panel">
+          <p><img src="ps4.jpg" alt="">
+            <h3>Playstaion 4</h3>
+            <p>The PlayStation 4 is an 8th-generation home video game console developed by Sony Interactive
+                Entertainment. The console's controller was also redesigned and improved over the PlayStation 3,
+                with improved buttons and analog sticks, and an integrated touchpad among other changes. PKR :
+                47,999.
+
+            </p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a></p>
+        </div>
+        <button class="accordion dropdown-toggle text-center">Playstation</button>
+        <div class="panel">
+          <p><img src="ps1.jpg" alt="" width="40%">
+            <h3>Playstation</h3>
+            <p>The PlayStation is a home video game console developed and marketed by Sony Computer Entertainment.
+                It was first released on 3 December 1994 in Japan, 9 September 1995 in North America, 29 September
+                1995 in Europe, and 15 November 1995 in Australia, and was the first of the PlayStation line of
+                video game consoles. <br> PKR : 14,699/</p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+
+        <button class="accordion dropdown-toggle text-center">Playstation 3</button>
+        <div class="panel">
+          <p><img src="ps3.jpg" alt="" width="40%">
+            <h3>Playstation 3</h3>
+            <p>The PlayStation 3 is a home video game console developed by Sony Computer Entertainment.  and is part of the PlayStation brand of consoles.It was the first console to use Blu-ray Disc as its primary storage medium. Sony PS3 family is cheaper and offers up to 500GB storage. <br> PKR : 23,999.</p>
+            <a href="#" class="btn btn-warning">-Buy Now-</a>
+</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+  <br> <br> <br> <br>
+  <div style="color: orange;" class="card-footer bg-transparent border-dark text-center">Aptech Project Tangoline © - 2021 All rights are reserved.</div>
+    </div>
+    
+</body>
+
+</html>
