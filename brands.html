@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.0.1-dist/css/bootstrap.min.css">
-    <script src="bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>  
     <title>Document</title>
     <style>
         body {
@@ -14,25 +14,20 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
+      font-family: 'Times New Roman', Times, serif;
     }   
-
         * {
             box-sizing: border-box;
         }
-
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-
         /* Float four columns side by side */
         .column {
             margin-left: 60px;
             width: 19%;
             padding: 0 10px;
         }
-
-
-
         /* Remove extra left and right margins, due to padding in columns */
         .row {
             margin: 0 5px;
@@ -44,16 +39,13 @@
             display: table;
             clear: both;
         }
-
         /* Style the counter cards */
-        .card {
+        .card{
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             /* this adds the "card" effect */
             padding: 16px;
             text-align: center;
-            background-color: white;
         }
-
         /* Responsive columns - one column layout (vertical) on small screens */
         @media screen and (max-width: 600px) {
             .column {
@@ -64,13 +56,16 @@
                 margin-left: 25px;
             }
         }
+        @media screen and (max-width: 600px) {
+            .cover {
+                width: 100%;
+                
+            }
+        }
     </style>
 </head>
-
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-" style="background-color: #6f42c1;">
-
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #6f42c1;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img style="width: 170px; margin-left: 40px;" src="logo-2.png"
                     alt=""></a>
@@ -81,31 +76,31 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a style="font-size: large;  " class="nav-link active text-warning " aria-current="page"
+                        <a style="font-size: large;  background-color:#6f42c1;" class="nav-link active text-warning " aria-current="page"
                             href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a style="font-size: large;" class="nav-link active text-warning " href="about.html">About</a>
+                        <a style="font-size: large; background-color:#6f42c1;" class="nav-link active text-warning " href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a style="font-size: large;" class="nav-link active text-warning " href="brands.html">Brands</a>
+                        <a style="font-size: large; background-color: #6f42c1;;" class="nav-link active text-warning " href="brands.html">Brands</a>
                     </li>
                     <li class="nav-item">
-                        <a style="font-size: large;" class="nav-link active text-warning " href="console.html">Console</a>
+                        <a style="font-size: large; background-color:#6f42c1;" class="nav-link active text-warning " href="console.html">Console</a>
                     <li class="nav-item">
-                        <a style="font-size: large;" href="contact.html" class="nav-link active text-warning ">Contact</a>
+                        <a style="font-size: large; background-color: #6f42c1;;" href="contact.html" class="nav-link active text-warning ">Contact</a>
                     </li>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="card bg-transparent text-white">
-        <img style="background-size: cover;" src="brandscover.png" class="card-img" alt="">
+    <div class="card text-white"  >
+        <img style="width: 100%;" src="brandscover.png" class="cover">
         <div class="card-img-overlay">
-          <h1
-            style=" font-family: 'Times New Roman', Times, serif; font-size: 60px; font-weight: bold; text-shadow: 2px 2px black; "
-            class="card-title text-center text-white">TANGOLINE BRANDS</h1>
+         <h1
+            style="  font-family: 'Times New Roman', Times, serif; font-size: 60px; font-weight: bold; text-shadow: 2px 2px black; "
+            class="card-title text-center text-white ">TANGOLINE BRANDS</h1>
           <p class="card-text text-center">
             <a style="text-decoration: none; color: white; font-weight: bold; text-shadow: 2px 2px black; font-weight: bold;"
               href="index.html">HOME</a> / <span> <a
@@ -115,44 +110,43 @@
         </div>
       </div>
     <br> <br> <br> <br>
-    <div class="container">
     <div class="row">
         <div class="column">
             <a href="epicgames.html">
-                <div class="card"><img style="border-style: dotted;" src="epic-logo1.png" alt=""></div>
+                <div class="card"><img  src="epic-logo1.png" alt=""></div>
         </div></a>
         <div class="column">
-           <a href="netmarblegames.html"> <div class="card"><img style="border-style: dotted;" src="netmarble-logo.png" alt="">
+           <a href="netmarblegames.html"> <div class="card"><img  src="netmarble.png" alt="">
             </div></a>
         </div>
         <div class="column">
-          <a href="easportgames.html">  <div class="card"><img style="border-style: dotted;" src="easport-logo.jpg" alt=""></div></a>
+          <a href="easportgames.html">  <div class="card"><img  src="easport.png" alt=""></div></a>
         </div>
         <div class="column">
             <a href="taketwogames.html">
-                <div class="card"><img style=" border-style: dotted;" src="take2-logo.png" alt=""></div>
+                <div class="card"><img  src="take2-logo.png" alt=""></div>
         </div>
     </div>
     <br> <br> <br>
     <div class="row">
         <div class="column">
             <a href="disneygames.html">
-                <div class="card"><img style="border-style: dotted;" src="disney-logo.jpg" alt=""></div>
+                <div class="card"><img  src="disney-logo.png" alt=""></div>
             </a>
         </div>
         <div class="column">
             <a href="nexongames.html">
-                <div class="card"><img style="border-style: dotted;" src="nexon-logo.jpg" alt=""></div>
+                <div class="card"><img  src="nexon-logo.png" alt=""></div>
             </a>
         </div>
         <div class="column">
             <a href="bandaigames.html">
-                <div class="card"><img style="border-style: dotted;" src="bandai-logo.png" alt=""></div>
+                <div class="card"><img src="bandai-logo.png" alt=""></div>
             </a>
         </div>
         <div class="column">
             <a href="ubisoft.html">
-                <div class="card"><img style="border-style: dotted;" src="ubisoft-logo.png" alt=""></div>
+                <div class="card"><img  src="ubisoft-logo.png" alt=""></div>
             </a>
         </div>
     </div>
@@ -160,30 +154,30 @@
     <div class="row">
         <div class="column">
             <a href="tencentgames.html">
-                <div class="card"><img style="border-style: dotted;" src="tencent-logo.png" alt=""></div>
+                <div class="card"><img  src="tencent-logo.png" alt=""></div>
             </a>
         </div>
         <div class="column">
             <a href="segagames.html">
-                <div class="card"><img style="border-style: dotted;" src="sega-logo.png" alt=""></div>
+                <div class="card"><img  src="segalogo.png" alt=""></div>
             </a>
         </div>
         <div class="column">
             <a href="popcapgames.html">
-                <div class="card"><img style="border-style: dotted;" src="popcap-logo.png" alt=""></div>
+                <div class="card"><img  src="popcap-logo.png" alt=""></div>
             </a>
         </div>
         <div class="column">
             <a href="simsgames.html">
-                <div class="card"><img style="border-style: dotted;" src="sims-logo.png" alt=""></div>
+                <div class="card"><img   src="sims-logo.png" alt=""></div>
             </a>
         </div>
     </div>
     <br> <br> <br> <br>
     <div  class="card-footer bg-transparent border-dark text-center text-info">Aptech Project Tangoline © -
         2019 All rights are reserved.</div>
-    </div>
-</div>
+    
+
 </body>
 
 </html>
